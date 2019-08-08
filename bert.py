@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 from tqdm import tqdm, trange
 
-data = pd.read_csv("lab.csv", encoding="latin1").fillna(method="ffill")
+data = pd.read_csv("lab31.csv", encoding="latin1").fillna(method="ffill")
 print(data.tail(10))
 
 class SentenceGetter(object):
@@ -109,7 +109,7 @@ def flat_accuracy(preds, labels):
     labels_flat = labels.flatten()
     return np.sum(pred_flat == labels_flat) / len(labels_flat)
 
-epochs = 3
+epochs = 100
 max_grad_norm = 1.0
 
 for _ in trange(epochs, desc="Epoch"):
