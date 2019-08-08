@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 from tqdm import tqdm, trange
 
-data = pd.read_csv("ner_dataset.csv", encoding="latin1").fillna(method="ffill")
+data = pd.read_csv("lab.csv", encoding="latin1").fillna(method="ffill")
 print(data.tail(10))
 
 class SentenceGetter(object):
@@ -197,3 +197,6 @@ valid_tags = [[tags_vals[l_ii] for l_ii in l_i] for l in true_labels for l_i in 
 print("Validation loss: {}".format(eval_loss/nb_eval_steps))
 print("Validation Accuracy: {}".format(eval_accuracy/nb_eval_steps))
 print("Validation F1-Score: {}".format(f1_score(pred_tags, valid_tags)))
+print(pred_tags)
+print(valid_tags)
+
