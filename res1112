@@ -1,8 +1,10 @@
-Epoch:   0%|          | 0/100 [00:00<?, ?it/s]Train loss: 0.09569927507586647
+Epoch:   0%|          | 0/100 [00:00<?, ?it/s]
+Train loss: 0.09569927507586647
 Validation loss: 0.06170933108244624
 Validation Accuracy: 0.989642857142857
 F1-Score: 0
-Epoch:   1%|          | 1/100 [00:16<26:35, 16.12s/it]Train loss: 0.060628066591003484
+Epoch:   1%|          | 1/100 [00:16<26:35, 16.12s/it]
+Train loss: 0.060628066591003484
 Validation loss: 0.06109131925872394
 Validation Accuracy: 0.989642857142857
 F1-Score: 0
@@ -11,7 +13,8 @@ Train loss: 0.05737907844677306
 Validation loss: 0.06032827602965491
 Validation Accuracy: 0.989642857142857
 F1-Score: 0
-Epoch:   3%|▎         | 3/100 [00:48<26:00, 16.08s/it]Train loss: 0.05170789073433792
+Epoch:   3%|▎         | 3/100 [00:48<26:00, 16.08s/it]
+Train loss: 0.05170789073433792
 Validation loss: 0.06343975929277283
 Validation Accuracy: 0.989642857142857
 F1-Score: 0
@@ -30,7 +33,8 @@ Train loss: 0.035174224868808925
 Validation loss: 0.0774761214852333
 Validation Accuracy: 0.9895833333333333
 F1-Score: 0
-Epoch:   7%|▋         | 7/100 [01:52<24:59, 16.13s/it]Train loss: 0.030447954115898984
+Epoch:   7%|▋         | 7/100 [01:52<24:59, 16.13s/it]
+Train loss: 0.030447954115898984
 Validation loss: 0.08553940270628248
 Validation Accuracy: 0.9888095238095238
 F1-Score: 0.012499999999999999
@@ -39,7 +43,8 @@ Train loss: 0.027897793587231844
 Validation loss: 0.08332446749721255
 Validation Accuracy: 0.9848809523809523
 F1-Score: 0.00896860986547085
-Epoch:   9%|▉         | 9/100 [02:25<24:29, 16.15s/it]Train loss: 0.02417173075260954
+Epoch:   9%|▉         | 9/100 [02:25<24:29, 16.15s/it]
+Train loss: 0.02417173075260954
 Validation loss: 0.08999185104455266
 Validation Accuracy: 0.9883333333333333
 F1-Score: 0
@@ -58,15 +63,18 @@ Train loss: 0.015075897397636845
 Validation loss: 0.09993862573589597
 Validation Accuracy: 0.9878571428571429
 F1-Score: 0.011363636363636362
-Epoch:  13%|█▎        | 13/100 [03:29<23:27, 16.18s/it]Train loss: 0.01361071930895968
+Epoch:  13%|█▎        | 13/100 [03:29<23:27, 16.18s/it]
+Train loss: 0.01361071930895968
 Validation loss: 0.09594979350055967
 Validation Accuracy: 0.9873809523809525
 F1-Score: 0.03296703296703297
-Epoch:  14%|█▍        | 14/100 [03:46<23:11, 16.18s/it]Train loss: 0.011957486531811586
+Epoch:  14%|█▍        | 14/100 [03:46<23:11, 16.18s/it]
+Train loss: 0.011957486531811586
 Validation loss: 0.10632609043802534
 Validation Accuracy: 0.9870833333333334
 F1-Score: 0.01092896174863388
-Epoch:  15%|█▌        | 15/100 [04:02<22:55, 16.19s/it]Train loss: 0.010951171522416795
+Epoch:  15%|█▌        | 15/100 [04:02<22:55, 16.19s/it]
+Train loss: 0.010951171522416795
 Validation loss: 0.10898478648492269
 Validation Accuracy: 0.9877380952380952
 F1-Score: 0
@@ -75,7 +83,8 @@ Train loss: 0.009102479676744622
 Validation loss: 0.11267547575490815
 Validation Accuracy: 0.9876190476190476
 F1-Score: 0
-Epoch:  17%|█▋        | 17/100 [04:34<22:23, 16.19s/it]Train loss: 0.008101967010205905
+Epoch:  17%|█▋        | 17/100 [04:34<22:23, 16.19s/it]
+Train loss: 0.008101967010205905
 Validation loss: 0.11603849647300583
 Validation Accuracy: 0.9876190476190476
 F1-Score: 0
@@ -84,7 +93,8 @@ Train loss: 0.007875024921081046
 Validation loss: 0.11434128880500793
 Validation Accuracy: 0.985892857142857
 F1-Score: 0.01923076923076923
-Epoch:  19%|█▉        | 19/100 [05:06<21:51, 16.19s/it]Train loss: 0.0077014638492919245
+Epoch:  19%|█▉        | 19/100 [05:06<21:51, 16.19s/it]
+Train loss: 0.0077014638492919245
 Validation loss: 0.112659288836377
 Validation Accuracy: 0.987142857142857
 F1-Score: 0.010810810810810811
@@ -93,11 +103,13 @@ Train loss: 0.006261085414352189
 Validation loss: 0.11982930558068412
 Validation Accuracy: 0.9864285714285714
 F1-Score: 0.01015228426395939
-Epoch:  21%|██        | 21/100 [05:39<21:19, 16.20s/it]Train loss: 0.005525624806882422
+Epoch:  21%|██        | 21/100 [05:39<21:19, 16.20s/it]
+Train loss: 0.005525624806882422
 Validation loss: 0.12250356163297381
 Validation Accuracy: 0.9885119047619048
 F1-Score: 0.012121212121212121
-Epoch:  22%|██▏       | 22/100 [05:55<21:03, 16.20s/it]Train loss: 0.005125567469676433
+Epoch:  22%|██▏       | 22/100 [05:55<21:03, 16.20s/it]
+Train loss: 0.005125567469676433
 Validation loss: 0.12068270466157369
 Validation Accuracy: 0.9870238095238095
 F1-Score: 0.010526315789473684
@@ -106,7 +118,8 @@ Train loss: 0.0042595227949501
 Validation loss: 0.1212240138224193
 Validation Accuracy: 0.987202380952381
 F1-Score: 0.010869565217391306
-Epoch:  24%|██▍       | 24/100 [06:27<20:31, 16.20s/it]Train loss: 0.003758072467334977
+Epoch:  24%|██▍       | 24/100 [06:27<20:31, 16.20s/it]
+Train loss: 0.003758072467334977
 Validation loss: 0.12487190269998141
 Validation Accuracy: 0.9883333333333332
 F1-Score: 0
@@ -120,7 +133,8 @@ Train loss: 0.003125442497803944
 Validation loss: 0.12671859030212676
 Validation Accuracy: 0.9888690476190477
 F1-Score: 0
-Epoch:  27%|██▋       | 27/100 [07:16<19:42, 16.20s/it]Train loss: 0.002824150656299919
+Epoch:  27%|██▋       | 27/100 [07:16<19:42, 16.20s/it]
+Train loss: 0.002824150656299919
 Validation loss: 0.13478581181594304
 Validation Accuracy: 0.9852380952380952
 F1-Score: 0.0182648401826484
@@ -129,7 +143,8 @@ Train loss: 0.0030288916061276963
 Validation loss: 0.1307750903069973
 Validation Accuracy: 0.9867857142857143
 F1-Score: 0
-Epoch:  29%|██▉       | 29/100 [07:49<19:10, 16.20s/it]Train loss: 0.0029612074760830423
+Epoch:  29%|██▉       | 29/100 [07:49<19:10, 16.20s/it]
+Train loss: 0.0029612074760830423
 Validation loss: 0.13080537851367677
 Validation Accuracy: 0.9855952380952381
 F1-Score: 0.009478672985781991
@@ -138,7 +153,8 @@ Train loss: 0.002649433839746563
 Validation loss: 0.1258822466645922
 Validation Accuracy: 0.9874404761904761
 F1-Score: 0
-Epoch:  31%|███       | 31/100 [08:21<18:38, 16.20s/it]Train loss: 0.002721634277565356
+Epoch:  31%|███       | 31/100 [08:21<18:38, 16.20s/it]
+Train loss: 0.002721634277565356
 Validation loss: 0.12876648988042558
 Validation Accuracy: 0.9852380952380952
 F1-Score: 0.009216589861751152
@@ -147,7 +163,8 @@ Train loss: 0.002095930792979504
 Validation loss: 0.1289416892187936
 Validation Accuracy: 0.9879761904761903
 F1-Score: 0
-Epoch:  33%|███▎      | 33/100 [08:53<18:05, 16.20s/it]Train loss: 0.0014512157429539673
+Epoch:  33%|███▎      | 33/100 [08:53<18:05, 16.20s/it]
+Train loss: 0.0014512157429539673
 Validation loss: 0.13289385821138108
 Validation Accuracy: 0.9864880952380952
 F1-Score: 0
@@ -156,7 +173,8 @@ Train loss: 0.0013203805376593792
 Validation loss: 0.1329110637307167
 Validation Accuracy: 0.9885714285714285
 F1-Score: 0.012195121951219511
-Epoch:  35%|███▌      | 35/100 [09:26<17:33, 16.20s/it]Train loss: 0.0016187802102649584
+Epoch:  35%|███▌      | 35/100 [09:26<17:33, 16.20s/it]
+Train loss: 0.0016187802102649584
 Validation loss: 0.13262121272938593
 Validation Accuracy: 0.9870238095238095
 F1-Score: 0
@@ -180,11 +198,13 @@ Train loss: 0.0009729683686026348
 Validation loss: 0.13638231584003993
 Validation Accuracy: 0.9883333333333333
 F1-Score: 0
-Epoch:  40%|████      | 40/100 [10:47<16:12, 16.20s/it]Train loss: 0.0009626571354920886
+Epoch:  40%|████      | 40/100 [10:47<16:12, 16.20s/it]
+Train loss: 0.0009626571354920886
 Validation loss: 0.14259696645396097
 Validation Accuracy: 0.9878571428571429
 F1-Score: 0
-Epoch:  41%|████      | 41/100 [11:03<15:56, 16.21s/it]Train loss: 0.0011714809758511062
+Epoch:  41%|████      | 41/100 [11:03<15:56, 16.21s/it]
+Train loss: 0.0011714809758511062
 Validation loss: 0.13858253828116826
 Validation Accuracy: 0.9864285714285714
 F1-Score: 0.01015228426395939
@@ -198,7 +218,8 @@ Train loss: 0.001330930688326541
 Validation loss: 0.13184841935123717
 Validation Accuracy: 0.9861309523809523
 F1-Score: 0
-Epoch:  44%|████▍     | 44/100 [11:52<15:07, 16.21s/it]Train loss: 0.0009878272232941654
+Epoch:  44%|████▍     | 44/100 [11:52<15:07, 16.21s/it]
+Train loss: 0.0009878272232941654
 Validation loss: 0.14059537329844066
 Validation Accuracy: 0.9856547619047619
 F1-Score: 0
@@ -222,7 +243,8 @@ Train loss: 0.0013347694919885772
 Validation loss: 0.1348646410873958
 Validation Accuracy: 0.9869642857142856
 F1-Score: 0
-Epoch:  49%|████▉     | 49/100 [13:13<13:46, 16.20s/it]Train loss: 0.0011727259509969276
+Epoch:  49%|████▉     | 49/100 [13:13<13:46, 16.20s/it]
+Train loss: 0.0011727259509969276
 Validation loss: 0.13940391157354629
 Validation Accuracy: 0.9877380952380953
 F1-Score: 0
@@ -231,7 +253,8 @@ Train loss: 0.0009902352848528832
 Validation loss: 0.13553010565893991
 Validation Accuracy: 0.9882142857142856
 F1-Score: 0
-Epoch:  51%|█████     | 51/100 [13:45<13:14, 16.21s/it]Train loss: 0.0009625376081027769
+Epoch:  51%|█████     | 51/100 [13:45<13:14, 16.21s/it]
+Train loss: 0.0009625376081027769
 Validation loss: 0.14487240144184657
 Validation Accuracy: 0.985952380952381
 F1-Score: 0.009900990099009901
@@ -245,7 +268,8 @@ Train loss: 0.0004416197506336111
 Validation loss: 0.14021739470107214
 Validation Accuracy: 0.9885119047619048
 F1-Score: 0
-Epoch:  54%|█████▍    | 54/100 [14:34<12:25, 16.20s/it]Train loss: 0.0008478340157460863
+Epoch:  54%|█████▍    | 54/100 [14:34<12:25, 16.20s/it]
+Train loss: 0.0008478340157460863
 Validation loss: 0.13377837623868669
 Validation Accuracy: 0.9872619047619047
 F1-Score: 0
@@ -259,7 +283,8 @@ Train loss: 0.0011871098129057301
 Validation loss: 0.13033619310174668
 Validation Accuracy: 0.9870833333333333
 F1-Score: 0
-Epoch:  57%|█████▋    | 57/100 [15:22<11:36, 16.20s/it]Train loss: 0.0011781437902403955
+Epoch:  57%|█████▋    | 57/100 [15:22<11:36, 16.20s/it]
+Train loss: 0.0011781437902403955
 Validation loss: 0.1393656177180154
 Validation Accuracy: 0.9885119047619048
 F1-Score: 0.012121212121212121
@@ -268,7 +293,8 @@ Train loss: 0.0011209514451094723
 Validation loss: 0.1432574572307723
 Validation Accuracy: 0.988095238095238
 F1-Score: 0.011627906976744186
-Epoch:  59%|█████▉    | 59/100 [15:55<11:04, 16.20s/it]Train loss: 0.0007301824725800543
+Epoch:  59%|█████▉    | 59/100 [15:55<11:04, 16.20s/it]
+Train loss: 0.0007301824725800543
 Validation loss: 0.13782853207417897
 Validation Accuracy: 0.9883928571428572
 F1-Score: 0
@@ -277,11 +303,13 @@ Train loss: 0.0006592641553301323
 Validation loss: 0.14600082167557307
 Validation Accuracy: 0.9873809523809524
 F1-Score: 0.011049723756906075
-Epoch:  61%|██████    | 61/100 [16:27<10:31, 16.20s/it]Train loss: 0.0006905457777432737
+Epoch:  61%|██████    | 61/100 [16:27<10:31, 16.20s/it]
+Train loss: 0.0006905457777432737
 Validation loss: 0.14709754394633429
 Validation Accuracy: 0.9868452380952382
 F1-Score: 0.010362694300518133
-Epoch:  62%|██████▏   | 62/100 [16:43<10:15, 16.20s/it]Train loss: 0.0008439059639114707
+Epoch:  62%|██████▏   | 62/100 [16:43<10:15, 16.20s/it]
+Train loss: 0.0008439059639114707
 Validation loss: 0.14642107593161718
 Validation Accuracy: 0.9848809523809524
 F1-Score: 0.018018018018018018
@@ -290,15 +318,18 @@ Train loss: 0.0008383064460008826
 Validation loss: 0.1449278380189623
 Validation Accuracy: 0.9874404761904761
 F1-Score: 0.022346368715083796
-Epoch:  64%|██████▍   | 64/100 [17:16<09:43, 16.20s/it]Train loss: 0.0006079133830880572
+Epoch:  64%|██████▍   | 64/100 [17:16<09:43, 16.20s/it]
+Train loss: 0.0006079133830880572
 Validation loss: 0.14987307574067796
 Validation Accuracy: 0.9863095238095239
 F1-Score: 0.0202020202020202
-Epoch:  65%|██████▌   | 65/100 [17:32<09:27, 16.20s/it]Train loss: 0.0006714355890277115
+Epoch:  65%|██████▌   | 65/100 [17:32<09:27, 16.20s/it]
+Train loss: 0.0006714355890277115
 Validation loss: 0.14922285292829787
 Validation Accuracy: 0.9858928571428571
 F1-Score: 0
-Epoch:  66%|██████▌   | 66/100 [17:48<09:10, 16.20s/it]Train loss: 0.0004273572879020848
+Epoch:  66%|██████▌   | 66/100 [17:48<09:10, 16.20s/it]
+Train loss: 0.0004273572879020848
 Validation loss: 0.14944784023932048
 Validation Accuracy: 0.9882142857142856
 F1-Score: 0
@@ -307,7 +338,8 @@ Train loss: 0.0007177859986034475
 Validation loss: 0.14175340426819666
 Validation Accuracy: 0.9879166666666667
 F1-Score: 0
-Epoch:  68%|██████▊   | 68/100 [18:20<08:38, 16.20s/it]Train loss: 0.0008471325162916624
+Epoch:  68%|██████▊   | 68/100 [18:20<08:38, 16.20s/it]
+Train loss: 0.0008471325162916624
 Validation loss: 0.1501839246068682
 Validation Accuracy: 0.9866071428571429
 F1-Score: 0.020408163265306124
@@ -326,7 +358,8 @@ Train loss: 0.0009246244113902529
 Validation loss: 0.1466997947011675
 Validation Accuracy: 0.9879761904761903
 F1-Score: 0.023121387283236993
-Epoch:  72%|███████▏  | 72/100 [19:25<07:33, 16.20s/it]Train loss: 0.0009833052571226737
+Epoch:  72%|███████▏  | 72/100 [19:25<07:33, 16.20s/it]
+Train loss: 0.0009833052571226737
 Validation loss: 0.1434446328452655
 Validation Accuracy: 0.9870238095238095
 F1-Score: 0
@@ -335,7 +368,8 @@ Train loss: 0.0005852019265531501
 Validation loss: 0.1506545799119132
 Validation Accuracy: 0.9878571428571429
 F1-Score: 0
-Epoch:  74%|███████▍  | 74/100 [19:58<07:01, 16.20s/it]Train loss: 0.000649237639121119
+Epoch:  74%|███████▍  | 74/100 [19:58<07:01, 16.20s/it]
+Train loss: 0.000649237639121119
 Validation loss: 0.14851483702659607
 Validation Accuracy: 0.9858333333333332
 F1-Score: 0.019417475728155338
@@ -349,11 +383,13 @@ Train loss: 0.0006677200867431422
 Validation loss: 0.14784316292830876
 Validation Accuracy: 0.9875595238095237
 F1-Score: 0.011049723756906075
-Epoch:  77%|███████▋  | 77/100 [20:46<06:12, 16.20s/it]Train loss: 0.0005617519874456839
+Epoch:  77%|███████▋  | 77/100 [20:46<06:12, 16.20s/it]
+Train loss: 0.0005617519874456839
 Validation loss: 0.15298164848770415
 Validation Accuracy: 0.9859523809523808
 F1-Score: 0
-Epoch:  78%|███████▊  | 78/100 [21:02<05:56, 16.20s/it]Train loss: 0.0003909129952437963
+Epoch:  78%|███████▊  | 78/100 [21:02<05:56, 16.20s/it]
+Train loss: 0.0003909129952437963
 Validation loss: 0.14700726632561004
 Validation Accuracy: 0.9865476190476191
 F1-Score: 0.010416666666666666
@@ -367,19 +403,23 @@ Train loss: 0.00019513699746248516
 Validation loss: 0.1519371803317751
 Validation Accuracy: 0.9869047619047618
 F1-Score: 0
-Epoch:  81%|████████  | 81/100 [21:51<05:07, 16.21s/it]Train loss: 0.00030230531907012877
+Epoch:  81%|████████  | 81/100 [21:51<05:07, 16.21s/it]
+Train loss: 0.00030230531907012877
 Validation loss: 0.1502472800867898
 Validation Accuracy: 0.9869642857142856
 F1-Score: 0.010810810810810811
-Epoch:  82%|████████▏ | 82/100 [22:07<04:51, 16.21s/it]Train loss: 0.0005668245515296707
+Epoch:  82%|████████▏ | 82/100 [22:07<04:51, 16.21s/it]
+Train loss: 0.0005668245515296707
 Validation loss: 0.15384595841169357
 Validation Accuracy: 0.9861309523809523
 F1-Score: 0.010050251256281407
-Epoch:  83%|████████▎ | 83/100 [22:24<04:35, 16.21s/it]Train loss: 0.0005366259252664269
+Epoch:  83%|████████▎ | 83/100 [22:24<04:35, 16.21s/it]
+Train loss: 0.0005366259252664269
 Validation loss: 0.1516232873712267
 Validation Accuracy: 0.9875595238095237
 F1-Score: 0
-Epoch:  84%|████████▍ | 84/100 [22:40<04:19, 16.20s/it]Train loss: 0.0005560349215732442
+Epoch:  84%|████████▍ | 84/100 [22:40<04:19, 16.20s/it]
+Train loss: 0.0005560349215732442
 Validation loss: 0.14852509860481536
 Validation Accuracy: 0.9878571428571429
 F1-Score: 0.011560693641618497
@@ -388,19 +428,23 @@ Train loss: 0.00029125418775054223
 Validation loss: 0.15112140668290003
 Validation Accuracy: 0.9872619047619047
 F1-Score: 0.01111111111111111
-Epoch:  86%|████████▌ | 86/100 [23:12<03:46, 16.20s/it]Train loss: 0.000386018558824537
+Epoch:  86%|████████▌ | 86/100 [23:12<03:46, 16.20s/it]
+Train loss: 0.000386018558824537
 Validation loss: 0.14950515436274664
 Validation Accuracy: 0.9880952380952381
 F1-Score: 0.01183431952662722
-Epoch:  87%|████████▋ | 87/100 [23:28<03:30, 16.20s/it]Train loss: 0.0006265485951684113
+Epoch:  87%|████████▋ | 87/100 [23:28<03:30, 16.20s/it]
+Train loss: 0.0006265485951684113
 Validation loss: 0.1461349172251565
 Validation Accuracy: 0.9884523809523807
 F1-Score: 0
-Epoch:  88%|████████▊ | 88/100 [23:45<03:14, 16.20s/it]Train loss: 0.0005828105574293755
+Epoch:  88%|████████▊ | 88/100 [23:45<03:14, 16.20s/it]
+Train loss: 0.0005828105574293755
 Validation loss: 0.14437482506036758
 Validation Accuracy: 0.9879166666666668
 F1-Score: 0.01183431952662722
-Epoch:  89%|████████▉ | 89/100 [24:01<02:58, 16.20s/it]Train loss: 0.0005060548657574895
+Epoch:  89%|████████▉ | 89/100 [24:01<02:58, 16.20s/it]
+Train loss: 0.0005060548657574895
 Validation loss: 0.15123553574085236
 Validation Accuracy: 0.9871428571428572
 F1-Score: 0.010989010989010988
@@ -434,7 +478,8 @@ Train loss: 0.0003333998061989724
 Validation loss: 0.15024057775735855
 Validation Accuracy: 0.9879166666666667
 F1-Score: 0
-Epoch:  96%|█████████▌| 96/100 [25:54<01:04, 16.20s/it]Train loss: 0.0003898786458114301
+Epoch:  96%|█████████▌| 96/100 [25:54<01:04, 16.20s/it]
+Train loss: 0.0003898786458114301
 Validation loss: 0.1523750594684056
 Validation Accuracy: 0.9876785714285715
 F1-Score: 0.02209944751381215
@@ -443,11 +488,13 @@ Train loss: 0.0008643777281848312
 Validation loss: 0.14455921202898026
 Validation Accuracy: 0.9883928571428572
 F1-Score: 0
-Epoch:  98%|█████████▊| 98/100 [26:27<00:32, 16.20s/it]Train loss: 0.0009876259313738014
+Epoch:  98%|█████████▊| 98/100 [26:27<00:32, 16.20s/it]
+Train loss: 0.0009876259313738014
 Validation loss: 0.1511367665869849
 Validation Accuracy: 0.9852976190476189
 F1-Score: 0.01834862385321101
-Epoch:  99%|█████████▉| 99/100 [26:43<00:16, 16.20s/it]Train loss: 0.0005560639144453473
+Epoch:  99%|█████████▉| 99/100 [26:43<00:16, 16.20s/it]
+Train loss: 0.0005560639144453473
 Validation loss: 0.1477192650948252
 Validation Accuracy: 0.9874404761904761
 F1-Score: 0.01092896174863388

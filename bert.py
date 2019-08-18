@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 from tqdm import tqdm, trange
 
-data = pd.read_csv("lab31.csv", encoding="latin1").fillna(method="ffill")
+data = pd.read_csv("lab1112.csv", encoding="latin1").fillna(method="ffill")
 print(data.tail(10))
 
 class SentenceGetter(object):
@@ -49,7 +49,7 @@ from sklearn.model_selection import train_test_split
 from pytorch_pretrained_bert import BertTokenizer, BertConfig
 from pytorch_pretrained_bert import BertForTokenClassification, BertAdam
 
-MAX_LEN = 75
+MAX_LEN = 128
 bs = 32
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -60,7 +60,7 @@ torch.cuda.get_device_name(0)
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
 
 tokenized_texts = [tokenizer.tokenize(sent) for sent in sentences]
-# print(tokenized_texts[0])
+# tokenized_texts = [sent.split(' ') for sent in sentences]
 
 input_ids = pad_sequences([tokenizer.convert_tokens_to_ids(txt) for txt in tokenized_texts], maxlen=MAX_LEN, dtype="long", truncating="post", padding="post")
 
@@ -109,7 +109,7 @@ def flat_accuracy(preds, labels):
     labels_flat = labels.flatten()
     return np.sum(pred_flat == labels_flat) / len(labels_flat)
 
-epochs = 100
+epochs = 50
 max_grad_norm = 1.0
 
 for _ in trange(epochs, desc="Epoch"):
