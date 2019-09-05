@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 from tqdm import tqdm, trange
 
-data = pd.read_csv("lab1112.csv", encoding="latin1").fillna(method="ffill")
+data = pd.read_csv("lab31.csv", encoding="utf-8").fillna(method="ffill")
 print(data.tail(10))
 
 class SentenceGetter(object):
@@ -57,7 +57,7 @@ n_gpu = torch.cuda.device_count()
 
 torch.cuda.get_device_name(0) 
 
-tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=False)
 
 tokenized_texts = [tokenizer.tokenize(sent) for sent in sentences]
 # tokenized_texts = [sent.split(' ') for sent in sentences]
@@ -109,7 +109,7 @@ def flat_accuracy(preds, labels):
     labels_flat = labels.flatten()
     return np.sum(pred_flat == labels_flat) / len(labels_flat)
 
-epochs = 50
+epochs = 30
 max_grad_norm = 1.0
 
 for _ in trange(epochs, desc="Epoch"):
