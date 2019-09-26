@@ -7,37 +7,55 @@ import pandas as pd
 import numpy as np
 from tqdm import tqdm, trange
 
-data = pd.read_csv("lab31.csv", encoding="utf-8").fillna(method="ffill")
-print(data.tail(10))
-
-class SentenceGetter(object):
-    
-    def __init__(self, data):
-        self.n_sent = 1
-        self.data = data
-        self.empty = False
-        agg_func = lambda s: [(w, t) for w, t in zip(s["Word"].values.tolist(), s["Tag"].values.tolist())]
-        self.grouped = self.data.groupby("Sentence #").apply(agg_func)
-        self.sentences = [s for s in self.grouped]
-    
-    def get_next(self):
-        try:
-            s = self.grouped["Sentence: {}".format(self.n_sent)]
-            self.n_sent += 1
-            return s
-        except:
-            return None
-
-getter = SentenceGetter(data)
-
-sentences = [" ".join([s[0] for s in sent]) for sent in getter.sentences]
+# data = pd.read_csv("lab_test.csv", encoding="utf-8").fillna(method="ffill")
+# # print(data.head(10))
+# # print(data.tail(10))
+#
+# class SentenceGetter(object):
+#
+#     def __init__(self, data):
+#         self.n_sent = 1
+#         self.data = data
+#         self.empty = False
+#         agg_func = lambda s: [(w, t) for w, t in zip(s["Word"].values.tolist(), s["Tag"].values.tolist())]
+#         self.grouped = self.data.groupby("Sentence #").apply(agg_func)
+#         self.sentences = [s for s in self.grouped]
+#
+#     def get_next(self):
+#         try:
+#             s = self.grouped["Sentence: {}".format(self.n_sent)]
+#             self.n_sent += 1
+#             return s
+#         except:
+#             return None
+#
+# getter = SentenceGetter(data)
+#
+# sentences = [" ".join([s[0] for s in sent]) for sent in getter.sentences]
 # print(sentences[0])
-
-labels = [[s[1] for s in sent] for sent in getter.sentences]
+#
+# labels = [[s[1] for s in sent] for sent in getter.sentences]
 # print(labels[0])
 
-tags_vals = list(set(data["Tag"].values))
+n = 4
+cat = ["B-OG", "B-UG", "B-MT", "B-GM", "B-LC"]
+
+#タグ名指定
+b = cat[n]
+f2n = "sent_" + b + ".txt"
+f3n = "tags_" + b + ".txt"
+
+sentences = open(f2n, 'r', encoding="utf-8").readlines()
+labels = open(f3n, 'r', encoding="utf-8").readlines()
+taglist = []
+
+for i in range(len(labels)):
+    labels[i] = labels[i].replace("\n","").split(" ")
+    taglist = taglist + labels[i]
+
+tags_vals = list(set(taglist))
 tag2idx = {t: i for i, t in enumerate(tags_vals)}
+print(tag2idx)
 
 # Apply Bert
 
