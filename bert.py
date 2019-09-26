@@ -37,7 +37,7 @@ from tqdm import tqdm, trange
 # labels = [[s[1] for s in sent] for sent in getter.sentences]
 # print(labels[0])
 
-n = 0
+n = 4
 cat = ["B-OG", "B-UG", "B-MT", "B-GM", "B-LC"]
 
 #タグ名指定
@@ -127,7 +127,7 @@ def flat_accuracy(preds, labels):
     labels_flat = labels.flatten()
     return np.sum(pred_flat == labels_flat) / len(labels_flat)
 
-epochs = 30
+epochs = 10
 max_grad_norm = 1.0
 
 for _ in trange(epochs, desc="Epoch"):
