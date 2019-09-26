@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c8ab5ad-bbc5-4d65-85d9-8576ebe7bcf7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/bert.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bert.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bert.py" beforeDir="false" afterPath="$PROJECT_DIR$/bert.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1112.csv" beforeDir="false" afterPath="$PROJECT_DIR$/lab1112.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,11 +19,11 @@
     <session id="-1807460999">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.2" value="6" />
-          <entry key="project.open.time.3" value="3" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.open.time.3" value="4" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -35,7 +34,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="61" />
+          <entry key="PLAIN_TEXT" value="70" />
           <entry key="Python" value="134" />
         </counts>
       </usages-collector>
@@ -46,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bert.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+            <state relative-caret-position="195">
+              <caret line="112" column="19" lean-forward="true" selection-start-line="112" selection-start-column="19" selection-end-line="112" selection-end-column="19" />
               <folding>
                 <element signature="e#57#76#0" expanded="true" />
               </folding>
@@ -88,8 +87,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="645" />
-    <option name="y" value="50" />
+    <option name="x" value="402" />
+    <option name="y" value="81" />
     <option name="width" value="1119" />
     <option name="height" value="846" />
   </component>
@@ -98,6 +97,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -109,7 +109,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -132,6 +131,28 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.bert">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="bert" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="bert" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bert" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -226,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566111100743</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="use utf-8">
+      <created>1567675834602</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1567675834602</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -239,15 +267,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="645" y="50" width="1119" height="846" extended-state="0" />
-    <editor active="true" />
+    <frame x="66" y="73" width="1119" height="846" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21714818" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22087605" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32681563" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32681563" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39944133" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -256,8 +283,9 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3282123" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3282123" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32960895" />
+      <window_info anchor="right" x="0" y="0" width="229" height="646" id="Documentation" side_tool="true" weight="0.32991612" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -278,7 +306,8 @@
     <MESSAGE value="update train_data" />
     <MESSAGE value="update res, pred" />
     <MESSAGE value="disable c-char tokenization" />
-    <option name="LAST_COMMIT_MESSAGE" value="disable c-char tokenization" />
+    <MESSAGE value="use utf-8" />
+    <option name="LAST_COMMIT_MESSAGE" value="use utf-8" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lab.csv" />
@@ -298,8 +327,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bert.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        <state relative-caret-position="195">
+          <caret line="112" column="19" lean-forward="true" selection-start-line="112" selection-start-column="19" selection-end-line="112" selection-end-column="19" />
           <folding>
             <element signature="e#57#76#0" expanded="true" />
           </folding>
