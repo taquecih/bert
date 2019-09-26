@@ -37,13 +37,13 @@ from tqdm import tqdm, trange
 # labels = [[s[1] for s in sent] for sent in getter.sentences]
 # print(labels[0])
 
-n = 4
+n = 0
 cat = ["B-OG", "B-UG", "B-MT", "B-GM", "B-LC"]
 
 #タグ名指定
 b = cat[n]
-f2n = "sent_" + b + ".txt"
-f3n = "tags_" + b + ".txt"
+f2n = "sent_" + b + "_os.txt"
+f3n = "tags_" + b + "_os.txt"
 
 sentences = open(f2n, 'r', encoding="utf-8").readlines()
 labels = open(f3n, 'r', encoding="utf-8").readlines()
@@ -68,7 +68,7 @@ from pytorch_pretrained_bert import BertTokenizer, BertConfig
 from pytorch_pretrained_bert import BertForTokenClassification, BertAdam
 
 MAX_LEN = 128
-bs = 32
+bs = 16
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 n_gpu = torch.cuda.device_count()

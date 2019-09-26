@@ -27,6 +27,8 @@ def tag_re(str, s1="\< ?(\/?) ?(\d\d) ?\>", s2="\<(\d\d)\> ", s3=" \<\/(\d\d)\>"
     str = re.sub(s3, "</\\1>", str)
     str = re.sub("([^ ])\<(\d\d)\>", "\\1 <\\2>", str)
     str = re.sub("\<\/(\d\d)\>([^ ])", "</\\1> \\2", str)
+    str = re.sub("(\d) \. (\d)", "\\1.\\2", str)
+    str = re.sub("([^ \>])、", "\\1 、", str)
     return str
 
 #タグをrangeからtokenに付け直す
@@ -42,11 +44,9 @@ def totag(str):
 
 #owakatiの後処理
 def preed(str):
-    str = re.sub("(\d) \. (\d)", "\\1.\\2", str)
     str = re.sub(" {1,}", " ", str)
     str = re.sub(" *\t *", "\t", str)
     str = re.sub(" $", "", str)
-    str = re.sub("([^ ＠])、", "\\1 、", str)
     return str
 
 #最後の処理
@@ -59,8 +59,8 @@ def psted(str):
 
 #tagだけの配列を生成
 def sent2tags(str):
-    str = re.sub("[^＠￥ ]+", "O", str)
-    str = str.replace("＠O￥", b)
+    str = re.sub("[^＠￥ \t\n]+", "O", str)
+    str = str.replace("＠O￥", b).replace("\t", " ").replace("\n", "")
     return str
 
 #英語の最小限のtokenize
