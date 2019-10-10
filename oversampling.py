@@ -13,6 +13,13 @@ f3n = "tags_" + b + ".txt"
 
 sentences = open(f2n, 'r', encoding="utf-8").readlines()
 labels = open(f3n, 'r', encoding="utf-8").readlines()
+
+val_len = 250
+
+val_sentences = sentences[-1 * val_len:-1]
+val_labels = labels[-1 * val_len:-1]
+sentences = sentences[0:len(sentences) - val_len - 1]
+labels = labels[0:len(sentences) - val_len - 1]
 labeled = []
 
 for i in range(len(labels)):
@@ -26,6 +33,10 @@ smpnums = random.choices(labeled, k=aug)
 for smpnum in smpnums:
     sentences.append(sentences[smpnum])
     labels.append(labels[smpnum])
+
+for i in range(val_len - 1):
+    sentences.append(val_sentences[i])
+    labels.append(val_labels[i])
 
 s = "".join(sentences)
 l = "".join(labels)

@@ -37,7 +37,7 @@ from tqdm import tqdm, trange
 # labels = [[s[1] for s in sent] for sent in getter.sentences]
 # print(labels[0])
 
-n = 4
+n = 2
 cat = ["B-OG", "B-UG", "B-MT", "B-GM", "B-LC"]
 
 #タグ名指定
@@ -47,6 +47,8 @@ f3n = "tags_" + b + "_os.txt"
 
 sentences = open(f2n, 'r', encoding="utf-8").readlines()
 labels = open(f3n, 'r', encoding="utf-8").readlines()
+
+val_len = 250
 taglist = []
 
 for i in range(len(labels)):
@@ -56,6 +58,11 @@ for i in range(len(labels)):
 tags_vals = list(set(taglist))
 tag2idx = {t: i for i, t in enumerate(tags_vals)}
 print(tag2idx)
+
+val_sentences = sentences[-1 * val_len:-1]
+val_labels = labels[-1 * val_len:-1]
+tr_sentences = sentences[0:len(sentences) - val_len - 1]
+tr_labels = labels[0:len(sentences) - val_len - 1]
 
 # Apply Bert
 
@@ -77,24 +84,27 @@ torch.cuda.get_device_name(0)
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=False)
 
-tokenized_texts = [tokenizer.tokenize(sent) for sent in sentences]
-# tokenized_texts = [sent.split(' ') for sent in sentences]
+tr_tokenized_texts = [tokenizer.tokenize(tr_sent) for tr_sent in tr_sentences]
+val_tokenized_texts = [tokenizer.tokenize(val_sent) for val_sent in val_sentences]
 
-input_ids = pad_sequences([tokenizer.convert_tokens_to_ids(txt) for txt in tokenized_texts], maxlen=MAX_LEN, dtype="long", truncating="post", padding="post")
+tr_input_ids = pad_sequences([tokenizer.convert_tokens_to_ids(tr_txt) for tr_txt in tr_tokenized_texts], maxlen=MAX_LEN, dtype="long", truncating="post", padding="post")
+val_input_ids = pad_sequences([tokenizer.convert_tokens_to_ids(val_txt) for val_txt in val_tokenized_texts], maxlen=MAX_LEN, dtype="long", truncating="post", padding="post")
 
-tags = pad_sequences([[tag2idx.get(l) for l in lab] for lab in labels], maxlen=MAX_LEN, value=tag2idx["O"], padding="post", dtype="long", truncating="post")
+tr_tags = pad_sequences([[tag2idx.get(l) for l in tr_lab] for tr_lab in tr_labels], maxlen=MAX_LEN, value=tag2idx["O"], padding="post", dtype="long", truncating="post")
+val_tags = pad_sequences([[tag2idx.get(l) for l in val_lab] for val_lab in val_labels], maxlen=MAX_LEN, value=tag2idx["O"], padding="post", dtype="long", truncating="post")
 
-attention_masks = [[float(i>0) for i in ii] for ii in input_ids]
+tr_attention_masks = [[float(i>0) for i in tr_ii] for tr_ii in tr_input_ids]
+val_attention_masks = [[float(i>0) for i in val_ii] for val_ii in val_input_ids]
 
-tr_inputs, val_inputs, tr_tags, val_tags = train_test_split(input_ids, tags, random_state=2018, test_size=0.1)
-tr_masks, val_masks, _, _ = train_test_split(attention_masks, input_ids, random_state=2018, test_size=0.1)
+# tr_inputs, val_inputs, tr_tags, val_tags = train_test_split(input_ids, tags, random_state=2018, test_size=0.1)
+# tr_masks, val_masks, _, _ = train_test_split(attention_masks, input_ids, random_state=2018, test_size=0.1)
 
-tr_inputs = torch.tensor(tr_inputs)
-val_inputs = torch.tensor(val_inputs)
+tr_inputs = torch.tensor(tr_input_ids)
+val_inputs = torch.tensor(val_input_ids)
 tr_tags = torch.tensor(tr_tags)
 val_tags = torch.tensor(val_tags)
-tr_masks = torch.tensor(tr_masks)
-val_masks = torch.tensor(val_masks)
+tr_masks = torch.tensor(tr_attention_masks)
+val_masks = torch.tensor(val_attention_masks)
 
 train_data = TensorDataset(tr_inputs, tr_masks, tr_tags)
 train_sampler = RandomSampler(train_data)
