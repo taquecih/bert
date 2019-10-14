@@ -47,6 +47,7 @@ def preed(str):
     str = re.sub(" {1,}", " ", str)
     str = re.sub(" *\t *", "\t", str)
     str = re.sub(" $", "", str)
+    str = re.sub("^ ", "", str)
     return str
 
 #最後の処理
